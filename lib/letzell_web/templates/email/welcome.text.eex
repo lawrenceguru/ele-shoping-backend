@@ -1,0 +1,4 @@
+Hello  <%=@user.first_name%>,
+
+Welcome to Letzell! Your account is now created.
+All you have to do is validate it using the following code : <%=@user.confirmation_code%>

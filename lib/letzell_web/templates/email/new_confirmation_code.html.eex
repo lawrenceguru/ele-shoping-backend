@@ -1,0 +1,5 @@
+<p>Hello <%=@user.first_name%>,</p>
+
+<p>Here is a new code that will allow you to validate your account :</p>
+<p><%=@user.confirmation_code%></p>
+<p>Please note, this code will expire in <%=Application.fetch_env!(:letzell, :confirmation_code_expire_hours)%> time.</p>

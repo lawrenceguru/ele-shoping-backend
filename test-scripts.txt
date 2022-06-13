@@ -1,0 +1,10 @@
+mutation {
+  signIn(email:"venkat@example.com",
+  password:"secret") {
+    result {
+      token
+    }
+  }
+}
+
+user = Repo.get_by(User, email_hash: "venkat@example.com")
